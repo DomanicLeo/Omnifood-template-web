@@ -58,7 +58,6 @@ html {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-
 }
 
 .grid {
@@ -84,7 +83,9 @@ html {
 /***************************************/
 /* Header Component */
 /***************************************/
-.heading-primary, .heading-secondary,.heading-tertionary{
+.heading-primary,
+.heading-secondary,
+.heading-tertionary {
   color: #333;
   letter-spacing: -0.5px;
   font-weight: 700;
@@ -101,7 +102,7 @@ html {
   line-height: 1.5;
 }
 
-.heading-primary{
+.heading-primary {
   font-size: 6.2rem;
   line-height: 1.1;
   margin-bottom: 3.2rem;
@@ -277,7 +278,7 @@ html {
   color: #888;
 }
 
-.heading-feature{
+.heading-feature {
   font-size: 1.8rem;
   font-weight: 600;
   color: #555;
@@ -298,8 +299,6 @@ html {
   opacity: 50%;
 }
 
-
-
 /***************************************/
 /* How it work */
 /***************************************/
@@ -316,7 +315,7 @@ html {
   justify-content: center;
   /* align-items: center; */
 }
-.step-image{
+.step-image {
   width: 35%;
 }
 
@@ -328,37 +327,36 @@ html {
 }
 
 .step-img-box::before,
-.step-img-box::after{
+.step-img-box::after {
   content: "";
   display: block;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
-.step-img-box::before{
+.step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
   background-color: #fdf2e9;
   z-index: -1;
 }
 
-.step-img-box::after{
+.step-img-box::after {
   width: 45%;
   padding-bottom: 45%;
   z-index: -1;
   background-color: #fae5d3;
 }
 
-
 /***************************************/
 /* Sectiio Meal*/
 /***************************************/
 .section-meal {
   padding: 9.6rem 0;
-} 
+}
 
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0, 0.075);
@@ -373,10 +371,9 @@ html {
 
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
- 
 }
 .meal-img {
- width: 100%;
+  width: 100%;
 }
 
 .meal-title {
@@ -385,19 +382,18 @@ html {
   color: #333;
 }
 
-.meal-attributes{
+.meal-attributes {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 2rem;
 }
 
-.meal-attribute  {
+.meal-attribute {
   display: flex;
   align-items: center;
   gap: 1.6rem;
   font-size: 1.8rem;
-
 }
 
 .tags {
@@ -416,55 +412,185 @@ html {
 }
 
 .tag--vagetarian {
-  background-color: #51cf66 ;
+  background-color: #51cf66;
 }
 
 .tag--vegan {
   background-color: #94d82d;
 }
 
-.tag--paleo{
-  background-color:#fcc419 ;
+.tag--paleo {
+  background-color: #fcc419;
 }
 
-.meal-icon{
+.meal-icon {
   color: #e67e22;
   width: 2.4rem;
   height: 2.4rem;
 }
-.meal-attribute{
+.meal-attribute {
   font-size: 1.8rem;
 }
 
-strong{
+strong {
   font-weight: 500;
 }
 
 /***************************************/
 /* Sectiio Diet*/
 /***************************************/
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-.list-item{
-  font-size: 1.8rem;
-  color: #555;
-  list-style-type: none;
-
-  display: flex;
-  align-items: center;
-  gap: 1.8rem;
-}
-
-.list-icon {
-  color: #b8651b;
-  width: 2.4rem;
-  height: 2.4rem;
-}
 
 .all-recepies {
   text-align: center;
   font-size: 1.8rem;
+}
+
+/***************************************/
+/* Sectiio Testimonial*/
+/***************************************/
+.section-testimonial {
+  background-color: #fae5d3;
+}
+.testimonial-container {
+  padding: 9.6rem 0;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.4rem;
+}
+
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #dddd;
+}
+
+.testimonial-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+/***************************************/
+/* Section Pricing*/
+/***************************************/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.list-wrap {
+  text-align: center;
+}
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.pricing-name {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.75;
+  color: #e67e22;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.pricing {
+  width: 75%;
+  border-radius: 11px;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  padding: 4.6rem;
+  border: 1px solid #fae5d3;
+}
+.pricing-plan--complete {
+  padding: 4.8rem;
+  background-color: #fae5d3;
+  position: relative;
+  overflow: hidden;
+}
+.pricing-price {
+  font-size: 6.4rem;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+}
+
+.pricing-price span {
+  font-size: 3.2rem;
+  margin-right: 2.4rem;
+}
+
+.pricing-text {
+  font-size: 1.6rem;
+}
+
+.pricing-btn {
+  text-align: center;
+  margin-top: 3.2rem;
+}
+
+.pricing-plan--complete::after {
+  content: "Best Value";
+  background-color: #fcc419;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top:8%;
+  right:-18%;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+
+.grid-feature--margin-top{
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.feature-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #e67e22;
+  margin-bottom: 3.2rem;
+  padding: 2.4rem;
+  background-color: #f9eee5;
+  border-radius: 50%;
 }

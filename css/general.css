@@ -158,3 +158,25 @@ strong {
 .center-text {
   text-align: center;
 }
+
+/* list Component */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  color: #555;
+  list-style-type: none;
+
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.list-icon {
+  color: #b8651b;
+  width: 2.4rem;
+  height: 2.4rem;
+}
