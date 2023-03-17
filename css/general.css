@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*:focus{
+  outline: none;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -37,6 +41,10 @@ html {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center--v {
@@ -79,7 +87,7 @@ strong {
 }
 
 /* Button Components */
-.btn:link,
+.btn, .btn:link,
 .btn:visited {
   display: inline-block;
   text-decoration: none;
@@ -119,6 +127,21 @@ strong {
   box-shadow: inset 0 0 0 3px #fff;
 }
 
+.btn-form {
+  background-color: #2e1902;
+  border-radius: 9px;
+  align-self: end;
+  cursor: pointer;
+  font-family: inherit;
+  align-self: end;
+  transition: all 0.3s;
+  border: none;
+}
+
+.btn-form:hover {
+  background-color: #fdf2e9;
+  color: #0f5102;
+}
 /* Tag Components */
 .tags {
   margin-bottom: 1.2rem;
