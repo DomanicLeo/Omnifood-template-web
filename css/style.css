@@ -34,54 +34,7 @@ SPACING SYSTEM (px)
 
 */
 
-/***************************************/
-/* General Component */
-/***************************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  color: #555;
-  overflow-x: hidden;
-}
-
-html {
-  font-size: 62.5%;
-  overflow-x: hidden;
-}
-
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 3.2rem;
-}
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-
-.grid--2--cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3--cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4--cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--center--v {
-  align-items: center;
-}
 /***************************************/
 /* Header Component */
 /***************************************/
@@ -176,10 +129,23 @@ html {
   background-color: #b8651b;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-mobile-icon {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+  display: none;
+}
+ 
 .btn-mobile-icon[name="close"] {
   display: none;
 }
-
+ 
 /***************************************/
 /* Main Component */
 /***************************************/
