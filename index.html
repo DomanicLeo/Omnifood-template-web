@@ -529,21 +529,21 @@
           </h2>
           <p class="cta-para">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
           </p>
-          <form action="#" class="cta-form">
+          <form name="sign-up" class="cta-form" netlify>
             <div>
             <label for="yourName">Your Name</label>
-            <input type="name" name="" id="yourName" placeholder="Mg Mg">
+            <input type="text" name="full-name" id="yourName" placeholder="Mg Mg" required>
           </div>
 
           <div>
             <label for="yourEmail">Your Email</label>
-            <input id="yourEmail" type="email" placeholder="Me@example.com">
+            <input name="email"  id="yourEmail" type="email" placeholder="Me@example.com">
           </div>
 
           <div>
             <label for="select-where">Where did you hear from us?
             </label>
-            <select name="" id="select-where">
+            <select name="select-where" id="select-where">
               <option value="Please choose one option">Please choose one option</option>
               <option value="Friends and family">Friends and family</option>
               <option value="Youtube Video">Youtube Video</option>
