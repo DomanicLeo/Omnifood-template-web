@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OminiFood</title>
+    <meta name="description" content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs. We have delivered 250,000+ meals last year!">
+    <title>OminiFood &mdash;Never Cook Again</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;600&family=Great+Vibes&family=Inter:wght@400;500;600;700&family=Montserrat:wght@100;400;600&family=Nunito+Sans&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
+    <!-- Favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon.png">
+    <link rel="manifest" href="/site.webmanifest">
     <!-- Custom Css Font -->
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -87,7 +92,12 @@
           </div>
 
           <div class="hero-img-box">
-            <img class="img-hero" src="./img/hero.png" alt="OminiFood Banner" />
+            <picture>
+              <source srcset="./img/hero-img/optimize-hero.webp" type="img/png">
+              <source srcset="./img/hero-img/optimize-hero.png" type="img/png">
+              <img class="img-hero" src="./img/hero-img/optimize-hero.png" alt="OminiFood Banner" />
+            </picture>
+            
           </div>
         </div>
       </section>
@@ -510,8 +520,6 @@
           </div>
         </div>
       </section>
-<<<<<<< HEAD
-=======
 
       <section class="section-cta">
       <div class="container">
@@ -615,112 +623,6 @@
         </div>
       </div>
     </footer>
->>>>>>> d96128d6db7e28c329c53b37d4628fd16478d384
-
-      <section class="section-cta" id="cta">
-      <div class="container">
-        <div class="cta">
-        <div class="cta-text-box">
-          <h2 class="heading-secondary">Get your first meal for free!
-          </h2>
-          <p class="cta-para">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
-          </p>
-          <form action="#" class="cta-form">
-            <div>
-            <label for="yourName">Your Name</label>
-            <input type="name" name="" id="yourName" placeholder="Mg Mg">
-          </div>
-
-          <div>
-            <label for="yourEmail">Your Email</label>
-            <input id="yourEmail" type="email" placeholder="Me@example.com">
-          </div>
-
-          <div>
-            <label for="select-where">Where did you hear from us?
-            </label>
-            <select name="" id="select-where">
-              <option value="Please choose one option">Please choose one option</option>
-              <option value="Friends and family">Friends and family</option>
-              <option value="Youtube Video">Youtube Video</option>
-              <option value="Podcast">Podcast</option>
-              <option value="Facebook ad">Facebook ad</option>
-              <option value="other">other</option>
-            </select>
-          </div>
-
-            <button class="btn btn-form">Sign Up Now</button>
-          </form>
-        </div>
-        <div class="cta-img-box" role="img" aria-label="Women Enjoy Food"></div>
-        </div>
-      </div>
-      </section>
-    </main>
-    <footer>
-      <div class="container grid footer-grid">
-        <div class="brand-logo">
-          <img src="./img/omnifood-logo.png" alt="OminiFood" class="logo">
-          <ul class="social-account">
-            <li class="footer-link">
-              <a href="#" class="footer-logo">
-                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-            <li class="footer-link">
-              <a href="#" class="footer-logo">
-                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-            <li class="footer-link">
-              <a href="#" class="footer-logo">
-                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
-              </a>
-            </li>
-          </ul>
-          <p class="copyright">Copyright © 2023 by Omnifood, Inc. All rights reserved.</p>
-        </div>
-       
-        <div class="address-col">
-          <p class="footer-heading">Contact us</p>
-          <address class="contact">
-            <p class="contact">
-              623 Harrison St., 2nd Floor, San Francisco, CA 94107
-            </p>
-            <p>
-              <a class="footer-link" href="tel:+959785809128">+959785809128</a>
-              <a class="footer-link" href="mailto:">hello@gmail.com</a>
-            </p>
-          </address>
-        </div>
-        <div class="nav-col">
-          <p class="footer-heading">Account</p>
-          <ul class="footer-nav">
-            <li><a href="#" class="footer-link">Creat account</a></li>
-            <li><a href="#" class="footer-link">Sign in</a></li>
-            <li><a href="#" class="footer-link">iOS app</a></li>
-            <li><a href="#" class="footer-link">Andriod app</a></li>
-          </ul>
-        </div>
-        <div class="nav-col"><p class="footer-heading">Company</p>
-          <ul class="footer-nav">
-            <li><a href="#" class="footer-link">About Omnifood</a></li>
-            <li><a href="#" class="footer-link">For Businesses</a></li>
-            <li><a href="#" class="footer-link">Cooking Partner</a></li>
-            <li><a href="#" class="footer-link">Career</a></li>
-          </ul></div>
-        <div class="nav-col">
-          <p class="footer-heading">Resource</p>
-          <ul class="footer-nav">
-            <li><a href="#" class="footer-link">Receipe dietery</a></li>
-            <li><a href="#" class="footer-link">Help Center</a></li>
-            <li><a href="#" class="footer-link">Privacy terms</a></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-
     <!-- Custom Js file -->
     <script src="./js/script.js"></script>
 
